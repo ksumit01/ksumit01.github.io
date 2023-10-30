@@ -18,7 +18,7 @@ button {
 }
 
 body {
-  background-color: #19151d;
+  background-color: #150c1e;
   color: white;
   overflow-x: hidden;
   max-width: 100%;
@@ -723,4 +723,11 @@ h3 {
     grid-template-columns: repeat(2, 100px);
     justify-content: space-around;
   }
+}
+.calendar {
+  margin: auto;
+}
+.calendar img {
+  width: 100%;
+  margin: auto;
 }
