@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 160" font-family="Segoe UI,Arial,sans-serif">
+<defs><marker id="a2" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#9db8d4"/></marker></defs>
+<rect fill="#0f6cbd" stroke="#0a4f8a" stroke-width="1.5" x="270" y="20" width="140" height="42" rx="8"/><text fill="#ffffff" font-size="11.5" font-weight="700" x="340" y="38" text-anchor="middle">Dynamics 365 CE</text><text fill="#dbeafe" font-size="9.5" font-weight="600" x="340" y="52" text-anchor="middle">Plugins + JS + Flows</text>
+<rect fill="#eef4fb" stroke="#0f6cbd" stroke-width="1.5" x="270" y="100" width="140" height="42" rx="8"/><text fill="#1b1f24" font-size="11.5" font-weight="700" x="340" y="118" text-anchor="middle">Azure Integration</text><text fill="#5b6470" font-size="9.5" font-weight="600" x="340" y="131" text-anchor="middle">Functions + APIs</text>
+<rect fill="#e6f7ef" stroke="#12805c" stroke-width="1.5" x="40" y="100" width="150" height="42" rx="8"/><text fill="#1b1f24" font-size="11.5" font-weight="700" x="115" y="125" text-anchor="middle">External Systems</text>
+<rect fill="#e6f7ef" stroke="#12805c" stroke-width="1.5" x="490" y="100" width="150" height="42" rx="8"/><text fill="#1b1f24" font-size="11.5" font-weight="700" x="565" y="125" text-anchor="middle">Third-Party Services</text>
+<line stroke="#9db8d4" stroke-width="1.8" x1="340" y1="62" x2="340" y2="97" marker-end="url(#a2)"/>
+<path fill="none" stroke="#9db8d4" stroke-width="1.8" d="M270,121 L192,121" marker-end="url(#a2)"/>
+<path fill="none" stroke="#9db8d4" stroke-width="1.8" d="M410,121 L488,121" marker-end="url(#a2)"/>
+</svg>

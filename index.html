@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sumit Kumar | Power Platform Developer</title>
-<meta name="description" content="Sumit Kumar - Microsoft Power Platform & Dynamics 365 Developer. Portfolio, projects, and experience.">
+<meta name="description" content="Sumit Kumar - Microsoft Power Platform and Dynamics 365 Developer. Portfolio, case studies, and experience.">
 <style>
   :root{
-    --blue:#0f6cbd; --blue-dark:#0a4f8a; --ink:#1b1f24; --muted:#5b6470;
+    --blue:#0f6cbd; --blue-dark:#0a4f8a; --green:#12805c; --ink:#1b1f24; --muted:#5b6470;
     --line:#e4e8ee; --bg:#ffffff; --bg-soft:#f5f8fc; --chip:#eef4fb; --shadow:0 6px 24px rgba(15,108,189,.08);
   }
   *{margin:0;padding:0;box-sizing:border-box}
@@ -17,20 +17,17 @@
   .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
   section{padding:64px 0;border-bottom:1px solid var(--line)}
   h2.sec{font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:8px}
-  h3.title{font-size:28px;font-weight:700;margin-bottom:28px;color:var(--ink)}
-
-  /* NAV */
+  h3.title{font-size:28px;font-weight:700;margin-bottom:12px;color:var(--ink)}
+  .lead{color:var(--muted);max-width:720px;margin-bottom:26px}
   header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
   nav{display:flex;align-items:center;justify-content:space-between;height:62px}
   .logo{font-weight:800;letter-spacing:.02em}
   .logo span{color:var(--blue)}
-  .navlinks{display:flex;gap:26px;font-size:14px;font-weight:600;color:var(--muted)}
+  .navlinks{display:flex;gap:24px;font-size:14px;font-weight:600;color:var(--muted)}
   .navlinks a:hover{color:var(--blue)}
   .navlinks .cta{color:#fff;background:var(--blue);padding:8px 16px;border-radius:8px}
   .navlinks .cta:hover{background:var(--blue-dark);color:#fff}
   .burger{display:none;font-size:24px;background:none;border:0;cursor:pointer;color:var(--ink)}
-
-  /* HERO */
   .hero{background:linear-gradient(180deg,var(--bg-soft),#fff);padding:74px 0 60px;border-bottom:1px solid var(--line)}
   .hero .eyebrow{color:var(--blue);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:13px}
   .hero h1{font-size:44px;line-height:1.12;margin:10px 0 6px;font-weight:800}
@@ -45,8 +42,6 @@
   .stats{display:flex;gap:38px;margin-top:34px;flex-wrap:wrap}
   .stat b{display:block;font-size:28px;color:var(--blue);font-weight:800}
   .stat span{font-size:13px;color:var(--muted)}
-
-  /* ABOUT / grid */
   .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:36px}
   .about-grid p{color:#3a424d;margin-bottom:14px}
   .card{background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
@@ -55,22 +50,22 @@
   .card li{padding:6px 0;border-bottom:1px dashed var(--line);font-size:14.5px;display:flex;justify-content:space-between}
   .card li:last-child{border:0}
   .card li b{color:var(--ink)}
-
-  /* SKILLS */
   .skillgroup{margin-bottom:20px}
   .skillgroup h4{font-size:15px;margin-bottom:10px;color:var(--ink)}
   .chips{display:flex;flex-wrap:wrap;gap:9px}
   .chip{background:var(--chip);color:var(--blue-dark);border:1px solid #d6e6f7;padding:6px 13px;border-radius:20px;font-size:13.5px;font-weight:600}
-
-  /* PROJECTS */
-  .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-  .proj{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow);transition:transform .18s,box-shadow .18s}
-  .proj:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(15,108,189,.14)}
-  .proj h4{font-size:18px;margin-bottom:6px}
-  .proj .tech{font-size:13px;color:var(--blue);font-weight:600;margin-bottom:10px}
-  .proj p{font-size:14.5px;color:#48505b}
-
-  /* TIMELINE */
+  .note{background:#fbf7e9;border:1px solid #e9dcae;color:#7a6a2e;font-size:13px;padding:10px 14px;border-radius:9px;margin-bottom:26px}
+  .case{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:var(--shadow);margin-bottom:26px}
+  .case-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;flex-wrap:wrap;margin-bottom:6px}
+  .case-head h4{font-size:21px}
+  .industry{display:inline-block;font-size:12px;font-weight:700;color:var(--blue);background:var(--chip);padding:3px 11px;border-radius:20px;margin-top:6px}
+  .stack{display:flex;flex-wrap:wrap;gap:7px;max-width:340px;justify-content:flex-end}
+  .stack .chip{font-size:12px;padding:4px 10px}
+  .diag{display:block;width:100%;height:auto;margin:16px 0 20px;background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:10px}
+  .cs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 26px}
+  .cs-grid h5{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:3px}
+  .cs-grid p{font-size:14.5px;color:#48505b}
+  .cs-grid .res p{color:var(--blue-dark);font-weight:600}
   .timeline{position:relative;margin-left:8px;padding-left:28px;border-left:2px solid #d6e6f7}
   .tl-item{position:relative;padding-bottom:30px}
   .tl-item:last-child{padding-bottom:0}
@@ -80,31 +75,27 @@
   .tl-item .org{font-size:14px;color:var(--blue-dark);font-weight:600;margin-bottom:8px}
   .tl-item ul{margin-left:18px;font-size:14.5px;color:#48505b}
   .tl-item li{margin-bottom:4px}
-
-  /* CONTACT */
   .contact{background:var(--bg-soft)}
   .contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:8px}
   .contact-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:flex;align-items:center;gap:14px;box-shadow:var(--shadow)}
-  .contact-card .ic{width:40px;height:40px;border-radius:10px;background:var(--chip);display:flex;align-items:center;justify-content:center;font-size:18px}
+  .contact-card .ic{width:40px;height:40px;border-radius:10px;background:var(--chip);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;color:var(--blue)}
   .contact-card .lbl{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
   .contact-card .val{font-weight:600;color:var(--ink);word-break:break-all}
   .contact-card:hover{border-color:var(--blue)}
-
   footer{padding:26px 0;text-align:center;color:var(--muted);font-size:13px}
-
   @media(max-width:820px){
     .navlinks{display:none}
     .navlinks.open{display:flex;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:#fff;padding:16px 24px;gap:14px;border-bottom:1px solid var(--line)}
     .burger{display:block}
     .hero h1{font-size:34px}
-    .about-grid,.projects,.contact-grid{grid-template-columns:1fr}
+    .about-grid,.cs-grid,.contact-grid{grid-template-columns:1fr}
+    .stack{justify-content:flex-start;max-width:none}
   }
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
   .reveal.in{opacity:1;transform:none}
 </style>
 </head>
 <body>
-
 <header>
   <div class="wrap">
     <nav>
@@ -113,7 +104,7 @@
       <div class="navlinks" id="nl">
         <a href="#about" onclick="closeNav()">About</a>
         <a href="#skills" onclick="closeNav()">Skills</a>
-        <a href="#projects" onclick="closeNav()">Projects</a>
+        <a href="#work" onclick="closeNav()">Case Studies</a>
         <a href="#experience" onclick="closeNav()">Experience</a>
         <a href="#contact" onclick="closeNav()">Contact</a>
         <a class="cta" href="Sumit_Kumar_Resume_Updated.pdf" download>Download Resume</a>
@@ -121,8 +112,6 @@
     </nav>
   </div>
 </header>
-
-<!-- HERO -->
 <div class="hero">
   <div class="wrap">
     <div class="eyebrow">Microsoft Power Platform Developer</div>
@@ -131,7 +120,7 @@
     <p class="lede">I design, develop, and maintain enterprise business applications and workflow automations on Microsoft Power Platform, including Power Apps, Power Automate, Dataverse, and SharePoint Online, turning complex business processes into reliable, scalable solutions.</p>
     <div class="actions">
       <a class="btn primary" href="Sumit_Kumar_Resume_Updated.pdf" download>&#8681; Download Resume</a>
-      <a class="btn ghost" href="#projects">View Projects</a>
+      <a class="btn ghost" href="#work">View Case Studies</a>
     </div>
     <div class="stats">
       <div class="stat"><b>2.5+</b><span>Years Experience</span></div>
@@ -140,16 +129,14 @@
     </div>
   </div>
 </div>
-
-<!-- ABOUT -->
 <section id="about">
   <div class="wrap reveal">
     <h2 class="sec">About</h2>
     <h3 class="title">Building digital solutions that streamline operations</h3>
     <div class="about-grid">
       <div>
-        <p>I&rsquo;m a Power Platform and Dynamics 365 Developer with 2.5+ years delivering enterprise CRM and business-application solutions at Alphavima Technologies. My work spans Model-Driven Apps, Power Automate cloud flows, Microsoft Dataverse, C# plugin development, and SharePoint Online, backed by solution-based development and Application Lifecycle Management (ALM) across development, test, and production environments.</p>
-        <p>I lead requirement-gathering sessions with global stakeholders, own projects end to end from discovery through deployment and post-production support, and mentor a small development team. I&rsquo;m currently deepening my Canvas Power Apps skills and pursuing the Microsoft PL-400 certification.</p>
+        <p>I am a Power Platform and Dynamics 365 Developer with 2.5+ years delivering enterprise CRM and business-application solutions at Alphavima Technologies. My work spans Model-Driven Apps, Power Automate cloud flows, Microsoft Dataverse, C# plugin development, and SharePoint Online, backed by solution-based development and Application Lifecycle Management (ALM) across development, test, and production environments.</p>
+        <p>I lead requirement-gathering sessions with global stakeholders, own projects end to end from discovery through deployment and post-production support, and mentor a small development team. I am currently deepening my Canvas Power Apps skills and pursuing the Microsoft PL-400 certification.</p>
       </div>
       <div class="card">
         <h4>Quick Facts</h4>
@@ -165,8 +152,6 @@
     </div>
   </div>
 </section>
-
-<!-- SKILLS -->
 <section id="skills">
   <div class="wrap reveal">
     <h2 class="sec">Skills</h2>
@@ -211,38 +196,71 @@
     </div>
   </div>
 </section>
-
-<!-- PROJECTS -->
-<section id="projects">
+<section id="work">
   <div class="wrap reveal">
-    <h2 class="sec">Projects</h2>
+    <h2 class="sec">Case Studies</h2>
     <h3 class="title">Selected work</h3>
-    <div class="projects">
-      <div class="proj">
-        <h4>Inventory Management &amp; ERP Integration</h4>
-        <div class="tech">Dynamics 365 &middot; Power Pages &middot; Azure Functions &middot; Workday SOAP</div>
-        <p>Custom asset tracking with real-time Workday ERP synchronization and a Power Pages self-service portal supporting operations and supply-chain processes.</p>
+    <p class="lead">Real engagements delivered at Alphavima Technologies. Client identities are withheld and described by industry; visuals below are architecture diagrams, not production screenshots.</p>
+    <div class="note">Note: Diagrams are conceptual representations of solution architecture. No client data or proprietary screens are shown.</div>
+
+    <div class="case">
+      <div class="case-head">
+        <div><h4>Inventory Management &amp; ERP Integration</h4><span class="industry">Manufacturing / Supply-Chain client</span></div>
+        <div class="stack"><span class="chip">Dynamics 365</span><span class="chip">Power Pages</span><span class="chip">Azure Functions</span><span class="chip">Workday SOAP</span></div>
       </div>
-      <div class="proj">
-        <h4>Enterprise CRM &amp; Multi-System Integration</h4>
-        <div class="tech">Dynamics 365 CE &middot; C# &middot; JavaScript &middot; Power Automate &middot; Azure</div>
-        <p>Sales and service business applications with Azure-based integrations for globally distributed stakeholders, improving client satisfaction.</p>
-      </div>
-      <div class="proj">
-        <h4>Secure Payment Integration</h4>
-        <div class="tech">Dynamics 365 &middot; Stripe APIs &middot; Azure Functions &middot; C#</div>
-        <p>Stripe PaymentIntent flow with webhook handling and full order/invoice lifecycle synchronization inside CRM.</p>
-      </div>
-      <div class="proj">
-        <h4>Rental Operations Automation</h4>
-        <div class="tech">Dynamics 365 &middot; Power Automate &middot; C#</div>
-        <p>Automated rental workflows reducing manual effort by ~50%, with dashboards that improved decision speed.</p>
+      <img class="diag" src="diagram1.svg" alt="Architecture: Workday ERP synced via Azure Function to Dataverse, surfaced in a Model-Driven App and a Power Pages self-service portal.">
+      <div class="cs-grid">
+        <div><h5>Problem</h5><p>Asset and inventory data lived in Workday ERP, disconnected from day-to-day operations, forcing manual lookups and error-prone re-entry.</p></div>
+        <div><h5>Approach</h5><p>Designed a Dataverse data model mirroring key ERP entities and an Azure Function SOAP client to synchronize records in near real time.</p></div>
+        <div><h5>Solution</h5><p>Built a Model-Driven App for internal asset tracking and a Power Pages portal giving external users self-service visibility, secured by role-based access.</p></div>
+        <div class="res"><h5>Result</h5><p>Real-time ERP visibility inside CRM, eliminating manual re-entry and giving operations a single source of truth for assets.</p></div>
       </div>
     </div>
+
+    <div class="case">
+      <div class="case-head">
+        <div><h4>Enterprise CRM &amp; Multi-System Integration</h4><span class="industry">Enterprise SaaS client</span></div>
+        <div class="stack"><span class="chip">Dynamics 365 CE</span><span class="chip">C#</span><span class="chip">JavaScript</span><span class="chip">Power Automate</span><span class="chip">Azure</span></div>
+      </div>
+      <img class="diag" src="diagram2.svg" alt="Architecture: Dynamics 365 CE with plugins and flows connecting to external and third-party systems through an Azure integration layer.">
+      <div class="cs-grid">
+        <div><h5>Problem</h5><p>Sales and service teams worked across several disconnected systems, with no unified customer view and heavy manual coordination.</p></div>
+        <div><h5>Approach</h5><p>Customized Dynamics 365 CE with C# plugins and JavaScript business logic, and orchestrated cross-system data movement through an Azure integration layer.</p></div>
+        <div><h5>Solution</h5><p>Unified sales and service processes in CRM with automated Power Automate flows connecting external and third-party systems for globally distributed stakeholders.</p></div>
+        <div class="res"><h5>Result</h5><p>A single customer view with automated cross-system sync, driving a measurable uplift in client satisfaction.</p></div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <div><h4>Secure Payment Integration</h4><span class="industry">Services / Fintech client</span></div>
+        <div class="stack"><span class="chip">Dynamics 365</span><span class="chip">Stripe APIs</span><span class="chip">Azure Functions</span><span class="chip">C#</span></div>
+      </div>
+      <img class="diag" src="diagram3.svg" alt="Architecture: Dynamics 365 triggers a Stripe PaymentIntent via Azure Function; a Stripe webhook calls back through Azure Function to sync invoices in CRM.">
+      <div class="cs-grid">
+        <div><h5>Problem</h5><p>Payments were processed outside CRM, leaving orders and invoices out of sync and requiring manual reconciliation.</p></div>
+        <div><h5>Approach</h5><p>Implemented a Stripe PaymentIntent flow via Azure Functions, with a secure webhook receiver to capture payment events.</p></div>
+        <div><h5>Solution</h5><p>Automated the full order-to-invoice lifecycle inside Dynamics 365, with webhook-driven status updates writing back to CRM records.</p></div>
+        <div class="res"><h5>Result</h5><p>End-to-end payment visibility in CRM and elimination of manual invoice reconciliation.</p></div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <div><h4>Rental Operations Automation</h4><span class="industry">Equipment Rental client</span></div>
+        <div class="stack"><span class="chip">Dynamics 365</span><span class="chip">Power Automate</span><span class="chip">C#</span></div>
+      </div>
+      <img class="diag" src="diagram4.svg" alt="Architecture: Rental request flows through Power Automate approvals into Dataverse, surfaced on operational dashboards.">
+      <div class="cs-grid">
+        <div><h5>Problem</h5><p>Rental workflows were largely manual, slowing approvals and leaving managers without timely operational visibility.</p></div>
+        <div><h5>Approach</h5><p>Modeled rental entities in Dataverse and automated the request-to-approval lifecycle with Power Automate and C# business logic.</p></div>
+        <div><h5>Solution</h5><p>Delivered automated rental workflows with rule-based approvals and operational dashboards for managers.</p></div>
+        <div class="res"><h5>Result</h5><p>Manual effort reduced by approximately 50%, with dashboards accelerating operational decisions.</p></div>
+      </div>
+    </div>
+
   </div>
 </section>
-
-<!-- EXPERIENCE -->
 <section id="experience">
   <div class="wrap reveal">
     <h2 class="sec">Experience</h2>
@@ -255,7 +273,7 @@
         <ul>
           <li>Lead requirement-gathering with global stakeholders and deliver Power Platform solutions end to end.</li>
           <li>Design Model-Driven Apps, Dataverse models, Power Automate flows, C# plugins, and SharePoint Online integrations.</li>
-          <li>Own ALM across dev/test/production; configure Entra ID authentication &amp; role-based access; mentor the dev team.</li>
+          <li>Own ALM across dev, test, and production; configure Entra ID authentication and role-based access; mentor the dev team.</li>
         </ul>
       </div>
       <div class="tl-item">
@@ -264,7 +282,7 @@
         <div class="org">Alphavima Technologies, Ahmedabad</div>
         <ul>
           <li>Delivered end-to-end D365 CE customizations, C# plugins, and Power Automate workflow automation.</li>
-          <li>Integrated Workday, Stripe, DocuSign, and QuickBooks via Azure Functions, cutting manual steps ~35%.</li>
+          <li>Integrated Workday, Stripe, DocuSign, and QuickBooks via Azure Functions, cutting manual steps by ~35%.</li>
           <li>Delivered three full projects including hypercare, ahead of estimated timelines.</li>
         </ul>
       </div>
@@ -273,53 +291,33 @@
         <h4>Trainee Engineer, Dynamics 365 Developer</h4>
         <div class="org">Alphavima Technologies, Ahmedabad</div>
         <ul>
-          <li>Built application customizations (plugins, workflows, JS web resources), reducing bug-related delays ~20%.</li>
-          <li>Contributed to technical documentation and solution handoffs, improving delivery speed ~15%.</li>
+          <li>Built application customizations (plugins, workflows, JS web resources), reducing bug-related delays by ~20%.</li>
+          <li>Contributed to technical documentation and solution handoffs, improving delivery speed by ~15%.</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
-
-<!-- CONTACT -->
 <section id="contact" class="contact">
   <div class="wrap reveal">
     <h2 class="sec">Contact</h2>
-    <h3 class="title">Let&rsquo;s work together</h3>
+    <h3 class="title">Let us work together</h3>
     <div class="contact-grid">
-      <a class="contact-card" href="mailto:ksumitcse@gmail.com">
-        <div class="ic">&#9993;</div>
-        <div><div class="lbl">Email</div><div class="val">ksumitcse@gmail.com</div></div>
-      </a>
-      <a class="contact-card" href="tel:+917091558499">
-        <div class="ic">&#128222;</div>
-        <div><div class="lbl">Phone</div><div class="val">+91 70915 58499</div></div>
-      </a>
-      <a class="contact-card" href="https://www.linkedin.com/in/sumit-kumar-cse-be01/" target="_blank" rel="noopener">
-        <div class="ic">in</div>
-        <div><div class="lbl">LinkedIn</div><div class="val">linkedin.com/in/sumit-kumar-cse-be01</div></div>
-      </a>
-      <a class="contact-card" href="https://github.com/ksumit01" target="_blank" rel="noopener">
-        <div class="ic">&#9679;</div>
-        <div><div class="lbl">GitHub</div><div class="val">github.com/ksumit01</div></div>
-      </a>
+      <a class="contact-card" href="mailto:ksumitcse@gmail.com"><div class="ic">&#9993;</div><div><div class="lbl">Email</div><div class="val">ksumitcse@gmail.com</div></div></a>
+      <a class="contact-card" href="tel:+917091558499"><div class="ic">&#128222;</div><div><div class="lbl">Phone</div><div class="val">+91 70915 58499</div></div></a>
+      <a class="contact-card" href="https://www.linkedin.com/in/sumit-kumar-cse-be01/" target="_blank" rel="noopener"><div class="ic">in</div><div><div class="lbl">LinkedIn</div><div class="val">linkedin.com/in/sumit-kumar-cse-be01</div></div></a>
+      <a class="contact-card" href="https://github.com/ksumit01" target="_blank" rel="noopener"><div class="ic">&#9679;</div><div><div class="lbl">GitHub</div><div class="val">github.com/ksumit01</div></div></a>
     </div>
     <div class="actions" style="margin-top:24px">
       <a class="btn primary" href="Sumit_Kumar_Resume_Updated.pdf" download>&#8681; Download Resume (PDF)</a>
     </div>
   </div>
 </section>
-
-<footer>
-  &copy; <span id="yr"></span> Sumit Kumar &middot; Power Platform &amp; Dynamics 365 Developer &middot; Built with HTML &amp; CSS
-</footer>
-
+<footer>&copy; <span id="yr"></span> Sumit Kumar &middot; Power Platform &amp; Dynamics 365 Developer &middot; Built with HTML &amp; CSS</footer>
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
   function closeNav(){document.getElementById('nl').classList.remove('open');}
-  var io = new IntersectionObserver(function(es){
-    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
-  }, {threshold:.12});
+  var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 </script>
 </body>
